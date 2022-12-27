@@ -24,8 +24,8 @@ namespace FixMe.Runners
         [Benchmark]
         public void Run()
         {
-            using (StreamWriter swc = File.AppendText(options.CuirckleFilePath))
-            using (StreamWriter swt = File.AppendText(options.AtrangleFilePath))
+            using (StreamWriter swc = new(options.CuirckleFilePath, true, Encoding.UTF8, 65536))
+            using (StreamWriter swt = new(options.AtrangleFilePath, true, Encoding.UTF8, 65536))
 
                 for (int i = 0; i < _all_the_cheats.Count(); i++)
                 {
