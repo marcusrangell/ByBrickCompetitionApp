@@ -36,7 +36,6 @@ namespace FixMe.Runners
                             var _irckle = cheatType as Cuirckle;
                             double circumference = _irckle.Calculate;
                             swc.WriteLine($"Circumference of circle: {_irckle.RandomRadius}:{circumference}");
-                            swc.Flush();
                         }
                     }
                     else
@@ -45,7 +44,6 @@ namespace FixMe.Runners
                             var _angle = cheatType as Atrangle;
                             double area = _angle.Calculate;
                             swt.WriteLine($"Area of triangle: {area}");
-                            swt.Flush();
                         }
                     }
                 }
