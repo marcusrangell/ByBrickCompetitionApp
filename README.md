@@ -31,4 +31,5 @@ The average run time after specific commits as follows:
 * **5056cbf** Remove StreamWriter Flush() - **281ms**
 * **ac7e302** Set buffersize on StreamWriter to 64k - **260ms**
 * **0bc678f** Parallelize main loop - **160ms**
+
 (As found on an HP ZBook 14" G8, i7-1165G7@2.80GHz, 32GB)
