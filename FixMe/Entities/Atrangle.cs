@@ -19,10 +19,9 @@ namespace FixMe.Entities
         {
             get
             {
-                Random rnd = new Random();
-                sideA = rnd.Next(10,50);
-                sideB = rnd.Next(10,50);
-                sideC = rnd.Next(10,50);
+                sideA = Random.Shared.Next(10,50);
+                sideB = Random.Shared.Next(10,50);
+                sideC = Random.Shared.Next(10,50);
 
                 double perimeter = (sideA + sideB + sideC) / 2;
                 double area = Math.Sqrt(perimeter * (perimeter - sideA) * (perimeter - sideB) * (perimeter - sideC));

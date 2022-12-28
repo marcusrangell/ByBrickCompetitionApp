@@ -17,9 +17,7 @@ namespace FixMe.Entities
 
         public double Calculate { 
             get {
-
-                Random rnd = new Random();
-                _randomRadius = Convert.ToDouble(rnd.Next(1000));
+                _randomRadius = Convert.ToDouble(Random.Shared.Next(1000));
                 _circumference = (2 * Math.PI) * _randomRadius;
 
                 return _circumference;
